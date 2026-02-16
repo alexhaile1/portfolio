@@ -1,0 +1,453 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alex Haile : Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+   
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="nav__inner">
+      <a class="brand" href="#top" aria-label="Retour en haut">
+        <span class="brand__dot"></span>
+        <span>Alex Haile</span>
+      </a>
+
+      <div class="nav__links">
+        <a href="#projects" class="navlink">Projets</a>
+        <a href="#contact" class="navlink">Contact</a>
+        <a href="#about" class="navlink">A propos de moi</a>
+        <a class="pill" href="CV/Alex_Haile_CV.pdf" download>Télécharger CV</a>
+
+        <div class="nav__profile">
+        <img src="Image/alex.png" alt="Photo">
+      </div>
+      </div>
+    </div>
+  </nav>
+
+  <main id="top">
+    <!-- HERO -->
+    <header class="hero">
+      <div class="hero__inner hero--centered">
+        <div class="heroCard">
+          <p class="badge">Disponible pour un stage</p>
+
+          <h1>Développeur junior<br />en informatique</h1>
+
+          <p class="subtitle">
+            Je construis des projets web propres et fonctionnels.
+            Je cherche un stage pour apprendre, contribuer et gagner
+            de l’expérience en équipe.
+          </p>
+
+          <div class="hero__cta">
+            <a class="btn btn--primary" href="#projects">
+              Voir mes projets <span class="arrow">→</span>
+            </a>
+            <a class="btn btn--ghost" href="#contact">Me contacter</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="section-separator"></div>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <div class="section__head">
+        <h2>Projets</h2>
+        <p>Bienvenue dans ma galerie de projets</p>
+      </div>
+
+      <div class="grid">
+        <!-- PROJET 1 -->
+       <article class="project focusable">
+          <div class="project__top">
+            <h3>GreenPulse : Plateforme de commerce de grains</h3>
+            <span class="tag">Site Web</span>
+          </div>
+
+          <div class="media">
+            <video controls autoplay muted loop preload="metadata">
+                <source src="Projets/GreenPulse.mp4" type="video/mp4" />
+            </video>
+        </div>
+          <p class="project__desc">
+           Plateforme web reliant directement producteurs et acheteurs de grains, avec gestion des transactions, rôles utilisateurs et automatisation logistique.
+          </p>
+
+          <div >
+            <span class="tech">Java</span>
+            <span class="tech">Spring Boot</span>
+            <span class="tech">JS</span>
+            <span class="tech">MySQL</span>
+            <span class="tech">CSS</span>
+            <span class="tech">Architecture MVC</span>
+        </div>
+        </article>
+
+        <!-- PROJET 2 -->
+        <article class="project focusable">
+          <div class="project__top">
+            <h3>ALLEN L'ALIEN : Jeu 2D</h3>
+            <span class="tag">Jeu vidéo</span>
+          </div>
+
+          <div class="media">
+            <video controls autoplay muted loop preload="metadata">
+              <source src="Projets/Jeu2D.mp4" type="video/mp4" />
+            </video>
+          </div>
+
+          <p class="project__desc">
+            Allenlalien est un jeu 2D composé de deux niveaux développés avec un système de tilemap, intégrant la gestion des collisions, une intelligence artificielle pour les ennemis et une logique de progression dynamique.
+          </p>
+
+          <div >
+            <span class="tech">C#</span>
+            <span class="tech">Unity</span>
+            <span class="tech">Tilemap</span>
+            <span class="tech">IA ennemis</span>
+            <span class="tech">Collisions</span>
+        </div>
+        </article>
+
+        <!-- PROJET 3 -->
+        <article class="project focusable">
+          <div class="project__top">
+            <h3>Nakfa : Plateforme de restaurant</h3>
+            <span class="tag">Site Web</span>
+          </div>
+
+          <div class="media">
+            <video controls autoplay muted loop preload="metadata">
+              <source src="Projets/Resto.mp4" type="video/mp4" />
+            </video>
+          </div>
+
+          <p class="project__desc">
+          Développement d’un site web dynamique en PHP relié à MySQL, avec gestion des réservations, structure MVC et contrôle de version sur GitLab.         
+         </p>
+
+           <div >
+            <span class="tech">PHP</span>
+            <span class="tech">MySQL</span>
+            <span class="tech">HTML</span>
+            <span class="tech">CSS</span>
+            <span class="tech">JavaScript</span>
+            <span class="tech">MVC</span>
+            <span class="tech">Docker</span>
+        </div>
+        </article>
+        <!-- PROJET 4 -->
+        <article class="project focusable">
+          <div class="project__top">
+            <h3>Huzzifly : Application De Music </h3>
+            <span class="tag">Application Andriod</span>
+          </div>
+
+          <div class="media">
+            <video controls autoplay muted loop preload="metadata">
+              <source src="Projets/Music.mp4" type="video/mp4" />
+            </video>
+          </div>
+
+          <p class="project__desc">
+          Huzzifly est une application musicale Android avec recherche par titre ou artiste, playlists et lecteur intégré, utilisant une API locale (json-server) et un stockage local pour fonctionner même hors ligne.
+          </p>
+          <div >
+            <span class="tech">Kotlin</span>
+            <span class="tech">Android SDK</span>
+            <span class="tech">JSON Server</span>
+            <span class="tech">Node.js</span>
+            <span class="tech">RecyclerView</span>
+
+        </div>
+        </article>
+
+        <!-- PROJET 5 -->
+         <article class="project focusable">
+          <div class="project__top">
+            <h3>Jeu 3D — Tilemap</h3>
+            <span class="tag">Jeu vidéo</span>
+          </div>
+
+          <div class="media">
+            <video controls autoplay muted loop preload="metadata">
+              <source src="Projets/Jeu3D.mp4" type="video/mp4" />
+            </video>
+          </div>
+
+          <p class="project__desc">
+            Jeu 3D développé avec Unity comprenant un premier niveau en labyrinthe axé sur l’orientation et la navigation du joueur, suivi d’un deuxième niveau en forêt immersive sur un terrain 100×100 avec placement d’objets, structuration de l’environnement et logique de gameplay en 3D.
+          </p>
+
+          <div>
+            <span class="tech">Unity</span>
+            <span class="tech">C#</span>
+            <span class="tech">3D Engine</span>
+            <span class="tech">Terrain 100x100</span>
+        </div>
+        </article>
+
+      </div>
+
+      
+    </section>
+
+    <div class="section-separator"></div>
+
+  <section id="about" class="section section--about-alt">
+
+      <div class="aboutAlt">
+
+        <div class="aboutAlt__header">
+          <h2>À propos de moi</h2>
+          <p>
+            Étudiant en informatique au Cégep de Rosemont.
+            Passionné par le développement web, les réseaux et la sécurité.
+          </p>
+        </div>
+
+        <div class="terminal">
+          <div class="terminal__bar">
+            <span></span><span></span><span></span>
+          </div>
+
+        <div class="terminal__body" id="aboutTerminal"
+          data-lines='[
+            "$ qui_suis_je",
+            "Alex Haile : Étudiant en Techniques de l’informatique",
+            "Cégep de Rosemont : Profil Développement Web",
+            "",
+            "$ specialisations",
+            " Développement web full-stack",
+            " Développement d’applications Android (Kotlin)",
+            " Conception d’API REST",
+            " Réseaux et sécurité informatique",
+            "",
+            "$ technologies",
+            " Angular / Spring Boot / MySQL",
+            " FastAPI / Docker / SQL",
+            " ASP.NET Core / SignalR",
+            " Unity (jeux 2D et 3D)",
+            " Git / GitLab",
+            "",
+            "$ approche",
+            " Code structuré et maintenable",
+            " Apprentissage rapide et autonome",
+            " Travail d’équipe et collaboration",
+            " Conception de solutions concrètes",
+            "",
+            "$ centres_d_interet",
+            " Basketball",
+            " Création et développement d’idées",
+            " Apprentissage continu de nouvelles technologies",
+            "",
+            "$ statut",
+            "Disponible pour un stage en développement"
+          ]'>
+        </div>
+
+        </div>
+        
+
+      </div>
+ 
+  </section>
+  
+    <div class="section-separator"></div>
+ 
+    <!-- CONTACT -->
+    <section id="contact" class="section section--contact-alt">
+    <div class="contactCard">
+      <h2>Contact</h2>
+
+      <p class="subtitle">
+        Contactez-moi pour échanger sur un projet ou une opportunité en développement.
+      </p>
+
+      <div class="socialLinks">
+
+        <a class="social" target="_blank"
+          href="https://mail.google.com/mail/?view=cm&fs=1&to=hailealex01@gmail.com">
+          <img src="icons/gmail.png" alt="Email">
+          <span>Email</span>
+        </a>
+
+        <a class="social" target="_blank"
+          href="https://github.com/alexhaile1">
+          <img src="icons/github.png" alt="GitHub">
+          <span>GitHub</span>
+        </a>
+
+        <a class="social" target="_blank"
+          href="https://www.linkedin.com/in/alex-haile/">
+          <img src="icons/linkedln.png" alt="LinkedIn">
+          <span>LinkedIn</span>
+        </a>
+
+      </div>
+
+    </div>
+  </section>
+
+    <footer class="footer">
+      <p>© 2026 Alex Haile : Portfolio</p>
+    </footer>
+  </main>
+
+    <div class="focusOverlay" id="focusOverlay" aria-hidden="true">
+    <div class="focusModal" role="dialog" aria-modal="true" aria-label="Projet en focus">
+        <div class="focusContent" id="focusContent"></div>
+    </div>
+    </div>
+
+</div>
+
+
+<script>
+  const overlay = document.getElementById("focusOverlay");
+  const focusContent = document.getElementById("focusContent");
+  
+  // Ouvre la modal avec le projet cliqué
+  function openFocus(card){
+    const clone = card.cloneNode(true);
+
+    focusContent.innerHTML = "";
+    focusContent.appendChild(clone);
+
+    overlay.classList.add("open");
+    document.body.classList.add("modal-open");
+  }
+
+  // Ferme la modal
+  function closeFocus(){
+    overlay.classList.remove("open");
+    document.body.classList.remove("modal-open");
+    focusContent.innerHTML = "";
+  }
+
+  // Ajoute un click sur chaque projet
+  document.querySelectorAll(".project.focusable").forEach(card => {
+    card.addEventListener("click", (e) => {
+      openFocus(card);
+    });
+  });
+
+  // Fermeture du modal si clic en dehors
+  overlay.addEventListener("click", (e) => {
+    if (e.target === overlay) closeFocus();
+  });
+   const videos = document.querySelectorAll("video");
+
+  // S'assurer que toutes les vidéos démarrent en mode muet
+  videos.forEach(v => v.muted = true);
+
+  function muteOthers(activeVideo){
+    videos.forEach(v => {
+      if (v !== activeVideo) v.muted = true;
+    });
+  }
+  videos.forEach(video => {
+    video.addEventListener("volumechange", () => {
+      if (!video.muted && video.volume > 0) muteOthers(video);
+    });
+    video.addEventListener("playing", () => muteOthers(video));
+  });
+</script>
+
+
+<script>
+document.addEventListener('DOMContentLoaded', async function() {
+  
+  var terminal = document.querySelector("#aboutTerminal");
+  
+  // Récupère les lignes à écrire depuis data-lines
+  var rawData = terminal.getAttribute("data-lines");
+  var content = JSON.parse(rawData);
+
+  // fonction pour faire une pause
+  const wait = (ms) => new Promise(resolve => setTimeout(resolve, ms));
+
+  // Création du curseur
+  var cursorSpan = document.createElement("span");
+  cursorSpan.classList.add("cursor");
+
+  // Ligne de départ avec seulement le curseur
+  let startLine = document.createElement("div");
+  startLine.className = "tline";
+  startLine.appendChild(cursorSpan);
+  terminal.appendChild(startLine);
+
+  let hasRun = false;
+
+  async function startTyping() {
+
+    await wait(500);
+
+    for (let i = 0; i < content.length; i++) {
+      let lineText = content[i];
+      
+      // Si la ligne est vide on saute une ligne
+      if (lineText === "") {
+        let spacer = document.createElement("div");
+        spacer.className = "tline"; 
+        terminal.appendChild(spacer);
+        continue;
+      }
+
+      let isCommand = lineText.trim().startsWith("$");
+      
+      let lineDiv = document.createElement("div");
+      lineDiv.classList.add("tline");
+      if (isCommand) {
+        lineDiv.classList.add("cmd");
+      } else {
+        lineDiv.classList.add("out");
+      }
+      
+      terminal.appendChild(lineDiv);
+      
+      // Le curseur se déplace dans la nouvelle ligne
+      lineDiv.appendChild(cursorSpan);
+
+      let charSpeed;
+      if (isCommand) {
+      charSpeed = 30; 
+      } else {
+        charSpeed = 10;
+      }
+
+      // Tape caractère par caractère
+      for (let j = 0; j < lineText.length; j++) {
+        let char = document.createTextNode(lineText[j]);
+        lineDiv.insertBefore(char, cursorSpan);
+        
+        let randomDelay = charSpeed + (Math.random() * 10);
+        await wait(randomDelay); 
+      }
+    }
+  }
+
+  // Commence quand la section devient visible
+  let observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        startTyping();
+        observer.unobserve(terminal); 
+      }
+    });
+  }); 
+
+  observer.observe(terminal);
+  });
+</script>
+
+</body>
+</html>
