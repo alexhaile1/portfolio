@@ -360,6 +360,23 @@
     });
     video.addEventListener("playing", () => muteOthers(video));
   });
+
+  let lastScroll = 0;
+  const nav = document.querySelector(".nav");
+
+  window.addEventListener("scroll", () => {
+    const currentScroll = window.pageYOffset;
+
+    if (currentScroll > lastScroll && currentScroll > 80) {
+      // Scroll vers le bas cache
+      nav.classList.add("nav--hidden");
+    } else {
+      // Scroll vers le haut montrer
+      nav.classList.remove("nav--hidden");
+    }
+
+    lastScroll = currentScroll;
+  });
 </script>
 
 
